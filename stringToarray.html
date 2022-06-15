@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // const str = "my name is hello";
+
+        // const a = str.split(' ');
+        // console.log(a);  //  ['my', 'name', 'is', 'hello']
+
+        // let arr=[];
+
+        // for(let i=str.length-1 ; i>=0 ; i--){
+            
+        //     arr = arr+ str[i];
+        // }
+
+        // console.log(arr);  // olleh si eman ym
+
+
+        // let abc=[]
+
+        // for(let i=0 ; i<str.length ; i++){
+            
+        //     abc.push(str[i])
+
+        // }
+        // console.log(abc);
+
+
+        // console.log(abc);  // my name is hello
+        // console.log(typeof(abc));  // string
+       
+
+        // const b = abc.split(' ');
+        // console.log(b);  //  ['my', 'name', 'is', 'hello']
+        // console.log(typeof(b));  // object
+
+
+
+        // const str1="hello world bye";
+
+        // let split =function (string,splict) {
+        
+
+      
+
+        let str = "abc def ghi jkl";
+        let word =(str,del)=>{
+           
+            let arr =[];
+            let ele=' ';
+            let j=0;
+
+
+            for(let i=0 ; i<str.length ; i++){
+
+
+                if(str[i] !== del){
+                    ele+=str[i];
+                    arr[j]=ele;
+                    
+                }else{
+                    j++;
+                    ele=' ';
+                }
+            }
+            return arr;
+        }
+
+        console.log(word(str," "));
+
+    </script>
+</body>
+</html>

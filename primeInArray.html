@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prime in array</title>
+</head>
+<body>
+    
+
+    <script>
+// let arr=[1,55,10,12,2,11,5,3,0]
+
+// let filterPrime=(arr)=>{
+//     let filt=arr.filter(value=>{
+
+//         if(value<2){
+//             return "not prime"
+//         }else{
+
+//             for(let i=2 ; i<arr.length ; i++){
+//                 if(value%i==0){
+//                     return "not prime"
+//                 }
+//             }
+//             return "prime"
+//         }
+
+//     })
+// }
+
+
+const arr = [34, 56, 3, 56, 4, 7, 68, 5, 2, 17, 8, 45, 34];
+const isPrime = n => {
+   if (n<=1){
+   return false;
+   
+   }else{
+      for(let x = 2; x < n; x++){
+         if(n % x === 0){
+            return false;
+         }
+      }
+      return true;
+   };
+};
+const filterPrime = arr => {
+   const filtered = arr.filter(el => isPrime(el));
+   return filtered;
+};
+console.log(filterPrime(arr));
+
+
+
+
+
+
+    </script>
+</body>
+</html>

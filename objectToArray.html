@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+  let obj={
+      name:"gana",
+      age:25,
+      work:'cognigent'
+  }
+
+
+  let arr=Object.keys(obj)
+  console.log(arr);
+
+  let val=Object.values(obj)
+
+  console.log(val);
+
+
+
+  let arrobj=arr.map(item=>{
+      return {[item]:obj[item]};
+  })
+console.log(arrobj);
+
+
+
+let objList={'a':1,'b':2,'c':3}
+
+// let arrList=Object.keys(objList).map(key=>{
+//     return [key.objList[key]]
+// })
+
+let aList=Object.entries(objList)
+console.log(aList);
+
+
+    </script>
+</body>
+</html>

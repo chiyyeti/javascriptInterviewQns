@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArrayToObject</title>
+</head>
+<body>
+    <script>
+        
+
+
+        let arr =[55,12,54,65];
+
+        let obj={}
+        obj = Object.assign(obj, arr);
+        console.log(obj);   // {0: 55, 1: 12, 2: 54, 3: 65}
+
+        let data = JSON.stringify(obj)
+        console.log(data);     // {"0":55,"1":12,"2":54,"3":65}
+ 
+    </script>
+</body>
+</html>

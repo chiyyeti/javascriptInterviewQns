@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArrayToString</title>
+</head>
+<body>
+    
+
+    <script>
+// we convert the array into string by using join() 
+
+        const arr =["hello","hi","bye"];
+
+        const str = arr.join(" , ");
+        console.log(str); // hello,hi,bye
+
+        const str1 = arr.toString();
+        console.log(str1); // hello,hi,bye
+
+            const spl = str1.split(',');
+            console.log(spl);  //  ['hello', 'hi', 'bye']
+
+    </script>
+</body>
+</html>

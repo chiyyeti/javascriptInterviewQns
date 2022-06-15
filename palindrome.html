@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+
+        let str=121
+        
+const polindrome=(str)=>{
+      for( let i=0 ; i<str.length ; i++){
+
+        if(str[i] !== str[str.length-1-i]){
+            return " Not polindrome"
+        }
+      }
+      return  "polindrome"
+    }
+
+    console.log(polindrome(str));
+
+
+
+    // let st=str.split('').reverse().join('')
+    // console.log(st);
+
+    // if(str === st){
+    //     console.log("polindrome");
+    // }else{
+    //     console.log("Not Polindrome");
+    // }
+    </script>
+    
+</body>
+</html>

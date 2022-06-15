@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="input" onkeyup="search()" />
+
+    <table id="table" border="1px solid black">
+      <thead>
+        <tr>
+          <td>name</td>
+          <td>age</td>
+          <td>email</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>gana</td>
+          <td>25</td>
+          <td>gana@gmail.com</td>
+        </tr>
+        <tr>
+          <td>sunny</td>
+          <td>21</td>
+          <td>sunny@gmail.com</td>
+        </tr>
+        <tr>
+          <td>manu</td>
+          <td>26</td>
+          <td>manu@gmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script>
+
+
+      function search() {
+        let filter = document.getElementById("input").value.toUpperCase();
+        let table = document.getElementById("table");
+        let tr = table.getElementsByTagName("tr");
+
+        for (let i = 0; i < tr.length; i++) {
+          let td = tr[i].getElementsByTagName("td")[0];
+
+          if (td) {
+            let text = td.textContent || td.innerHTML;
+            if (text.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
+          }
+        }
+      }
+
+      
+    </script>
+  </body>
+</html>

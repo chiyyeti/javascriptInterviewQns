@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duplicate</title>
+</head>
+<body>
+    
+
+    <script>
+        let arr=[1,4,2,1,4,2,1]
+        let du=[]
+// forEach
+        arr.forEach(item=>{
+            if(du.indexOf(item)<1){
+                du.push(item)
+            }
+        })
+
+        console.log(du);
+
+
+
+        // filter method
+let unique = arr.filter((value,index)=>{
+    return arr.indexOf(value) === index ;
+})
+
+console.log(unique);
+
+
+// Set method
+
+
+let dup=[...new Set(arr)]
+console.log(dup);
+
+
+// map method
+
+const ar=[1,12,11,41,21,1,11,12]
+dum=[]
+
+let dummy= ar.map((value,index,ar)=>{
+    if(ar.indexOf(value) === index) {
+        dum.push(value)
+    }
+    
+})
+console.log(dum);
+
+// Object.keys
+
+let b=Object.keys(ar);
+console.log(b);
+
+let c={}
+for( let i=0 ; i<ar.length ; i++){
+    c[i]= ar[i]
+}
+let d=Object.values(c)
+console.log(d);
+
+    </script>
+</body>
+</html>

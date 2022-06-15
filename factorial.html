@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+</head>
+<body>
+    
+
+    <script>
+
+        // Recursion
+        let Factorial=(num)=>{
+            if(num ===1 || num === 0){
+
+                return 1
+            }else{
+               return num*Factorial(num-1)
+            }
+        }
+
+        console.log(Factorial(5));
+
+// for loop
+
+ let fact=(n)=>{
+     let f=1
+     for(let i=1 ; i<=n ; i++){
+         f=f*i;
+     }
+     console.log(f);
+ }
+ fact(2)
+
+
+    </script>
+</body>
+</html>
